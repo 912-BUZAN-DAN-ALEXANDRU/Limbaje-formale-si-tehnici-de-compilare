@@ -1,0 +1,11 @@
+int a
+int b
+a = 2
+b= 2
+char c
+c = 'c'
+if a > 3:
+print(a)
+else:
+print(b)
+

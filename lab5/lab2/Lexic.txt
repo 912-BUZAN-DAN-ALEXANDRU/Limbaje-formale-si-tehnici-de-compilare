@@ -1,0 +1,23 @@
+Alphabet:
+    a. Upper and lower case letter of the English alphabet
+    b. Underline character '_'
+    c. Decimal Digits
+
+   Lexic:
+    a. Special simbols:
+        -operators + - * / := < <= == >=
+        -separators  [ ] { }  : ; space
+        -reserved words:
+            int char array while if else and or not read print
+    b.identifiers
+        -a sequence of letters and  digits, such that the first character is a letter; the rule is:
+            identifier ::= letter | letter{letter}{digit}
+            letter ::= "A" | "B" | . ..| "Z"
+            digit ::= "0" | "1" |...| "9"
+
+    1.integer - rule:
+        noconst:="+"no|"-"no|no
+        no:=digit{no}
+
+    2.character
+        character:='letter'|'digit'

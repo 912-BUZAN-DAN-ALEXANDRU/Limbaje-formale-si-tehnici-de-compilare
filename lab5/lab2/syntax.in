@@ -1,0 +1,19 @@
+declaration ::= type " " IDENTIFIER
+type1 ::= "char" | "int"
+arraydecl ::= "array" "<" type1 ">"
+type  ::= type1|arraydecl
+stmtlist ::= stmt | stmt "\n" stmtlist
+stmt ::= simplstmt | structstmt
+struct ::= "{" stmtlist "}"
+simplstmt ::= assignstmt | iostmt
+assignstmt ::= IDENTIFIER "=" expression
+expression ::= expression "+" term | term
+term ::= term "*" factor | factor
+factor ::= "(" expression ")" | identifier
+iostmt ::= "read" | "print" "(" identifier ")"
+ifstmt ::= "if" condition ":" stmt ["ELSE" ":" stmt]
+whilestmt ::= "while" condition ":" stmt
+condition ::= expression relation expression
+relation ::= "<" | "<=" | "==" | "<>" | ">=" | ">"
+
+
