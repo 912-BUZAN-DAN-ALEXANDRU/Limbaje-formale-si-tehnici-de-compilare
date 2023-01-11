@@ -1,6 +1,7 @@
-N := S A B
-E := 0 1
+N := S A B C
+E := ( ) + * int
 P:
-S := 0 B | 1 A
-A := 0 | 0 S | 1 A A
-B := 1 | 1 S | 0 B B
+S := A B
+A := ( S ) | int C
+B := + S | eps
+C := * A | eps
